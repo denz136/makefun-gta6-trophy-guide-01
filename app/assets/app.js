@@ -63,6 +63,20 @@ function visibleTrophies() {
   });
 }
 
+/* sources: explicit field, else parsed from the guide's "Sources: ..." sentence */
+function trophySources(t) {
+  if (Array.isArray(t.sources) && t.sources.length) return t.sources.map(String);
+  var m = (t.guide || '').match(/(?:^|\.\s|\u2014\s)Sources?:\s*(.+?)\.?\s*$/);
+  return m ? m[1].split(/\s*;\s*/).filter(Boolean) : [];
+}
+function sourceChipsHTML(t) {
+  var srcs = trophySources(t);
+  if (!srcs.length) return '';
+  return '<div class="src-chips">' + srcs.map(function (s) {
+    return '<span class="src-chip" title="' + esc(s) + '">' + esc(s) + '</span>';
+  }).join('') + '</div>';
+}
+
 /* ---------- render ---------- */
 function renderStats() {
   var earnedCount = TROPHIES.filter(isEarned).length;
@@ -103,7 +117,8 @@ function trophyHTML(t) {
     '<div class="medal ' + t.grade + '">' + medalIcon(t.grade) + '</div>' +
     '<div class="t-main"><div class="t-name">' + esc(name) + '</div>' +
     '<div class="t-desc">' + esc(desc) + '</div>' +
-    '<div class="t-tags">' + tags.join('') + '</div></div>' +
+    '<div class="t-tags">' + tags.join('') + '</div>' +
+    sourceChipsHTML(t) + '</div></div>' +
     '<div class="t-check" data-check="' + t.id + '" title="Toggle earned">' + (earned ? '\u2713' : '') + '</div>' +
     '</div>';
 }
@@ -140,9 +155,10 @@ function renderDetail() {
     '<h4>Official description</h4><p>' + (spoiled ? 'Hidden until earned.' : esc(t.description)) + '</p>' +
     '<h4>Guide</h4><p>' + esc(guide) + '</p>' +
     '<h4>Sources</h4>' +
+    '<div class="src-chips" style="margin-top:4px">' + sourceChipsHTML(t).replace(/^<div class="src-chips">|<\/div>$/g, '') + '</div>' +
     '<p class="src">Official PlayStation trophy name &amp; description &mdash; as published on PSNProfiles and Exophase (both lists agree). ' +
-    'Guide text: original work for this entry, written from the official description. ' +
-    '<a href="https://psnprofiles.com/trophies" target="_blank" rel="noreferrer">PSNProfiles</a> &middot; ' +
+    'Guide text: original work for this entry, written from the official description.</p>' +
+    '<p class="src" style="margin-top:8px"><a href="https://psnprofiles.com/trophies" target="_blank" rel="noreferrer">PSNProfiles</a> &middot; ' +
     '<a href="https://psnprofiles.com" target="_blank" rel="noreferrer">Exophase</a></p>' +
     (t.missable ? '<p class="missnote" style="color:var(--pink);margin-top:12px">&#9888; Flagged MISSABLE' +
       ' &mdash; plan it before it can slip away (see the Roadmap).</p>' : '') +
