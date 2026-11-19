@@ -302,3 +302,5 @@ ok('per-kind progress chips render earned/total');
 
 /* ------------------------------------------------------------ summary */
 console.log('\n' + checks + ' checks passed.');
+
+// reauthor final pass

@@ -365,3 +365,5 @@ render();
 renderMissables();
 renderAbout();
 document.getElementById('pct-label').textContent = document.getElementById('stat-pct').textContent;
+
+// reauthor final pass

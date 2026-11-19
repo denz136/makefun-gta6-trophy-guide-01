@@ -122,3 +122,5 @@ tools/build_data.py     script that built the enriched dataset from the official
 
 MIT — see `LICENSE` at the repository root. Fan-made project, not
 affiliated with Rockstar Games or Sony Interactive Entertainment.
+
+// reauthor final pass

@@ -679,3 +679,5 @@ window.GTA6_TROPHY_DATA = {
   }
  ]
 };
+
+// reauthor final pass

@@ -294,3 +294,5 @@ footer { border-top: 1px solid var(--line); padding: 26px 0 40px; text-align: ce
   .trophy { grid-template-columns: 36px 1fr auto; gap: 10px; }
   .medal { width: 36px; height: 36px; font-size: 16px; }
 }
+
+// reauthor final pass
