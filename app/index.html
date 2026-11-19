@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTA VI Trophy Guide &amp; Tracker — Vice City Neon Edition</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">PlayStation 5 &middot; 55 Trophies &middot; Offline Guide &amp; Tracker</div>
+    <h1>Grand Theft Auto VI<br>Trophy Roadmap</h1>
+    <p class="sub">The complete 55-trophy list for Jason &amp; Lucia's story in Leonida — with a platinum roadmap,
+      missable flags, filters and a progress tracker saved in your browser. 100% offline: no network requests.</p>
+    <div class="hero-stats">
+      <div class="stat"><b id="stat-earned">0/55</b><span>earned</span></div>
+      <div class="stat"><b id="stat-pct">0%</b><span>progress</span></div>
+      <div class="stat"><b id="stat-missable-open">5</b><span>missable left</span></div>
+      <div class="stat"><b id="platinum-stat">LOCKED</b><span>platinum</span></div>
+    </div>
+    <div class="progress-block">
+      <div class="progress-top"><span>Platinum progress</span><b id="pct-label">0%</b></div>
+      <div class="bar"><i></i></div>
+      <div class="cat-progress">
+        <span class="chip-prog" id="cp-story">story</span>
+        <span class="chip-prog" id="cp-side">side</span>
+        <span class="chip-prog" id="cp-collection">collection</span>
+        <span class="chip-prog" id="cp-stunt">stunt</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="tabs">
+    <button data-tab="checklist" class="active">Checklist</button>
+    <button data-tab="roadmap">Platinum Roadmap</button>
+    <button data-tab="missables">Missables</button>
+    <button data-tab="about">Data Source</button>
+  </nav>
+
+  <!-- ============ CHECKLIST ============ -->
+  <section class="tab active" id="tab-checklist">
+    <div class="toolbar">
+      <input type="text" id="search" placeholder="Search trophies… (name, description, guide)">
+      <div class="seg" id="grade-filters">
+        <button class="btn on" data-grade="all">All grades</button>
+        <button class="btn" data-grade="platinum">Platinum</button>
+        <button class="btn" data-grade="gold">Gold</button>
+        <button class="btn" data-grade="silver">Silver</button>
+        <button class="btn" data-grade="bronze">Bronze</button>
+      </div>
+      <div class="seg" id="cat-filters">
+        <button class="btn on" data-cat="all">All kinds</button>
+        <button class="btn" data-cat="story">Story</button>
+        <button class="btn" data-cat="side">Side</button>
+        <button class="btn" data-cat="collection">Collectibles</button>
+        <button class="btn" data-cat="stunt">Stunts</button>
+        <button class="btn" data-cat="online">Online</button>
+      </div>
+      <button class="btn" id="missable-toggle">Missable only</button>
+      <button class="btn" id="spoiler-toggle" title="Hide story trophies until earned">Spoiler mode</button>
+      <button class="btn primary" id="export-btn">Export</button>
+      <button class="btn" id="import-btn">Import</button>
+      <button class="btn" id="reset-btn">Reset</button>
+      <input type="file" id="import-file" accept=".json,application/json" style="display:none">
+    </div>
+
+    <div class="detail" id="detail-panel" style="display:none"></div>
+    <div class="trophy-list" id="trophy-list"></div>
+  </section>
+
+  <!-- ============ ROADMAP ============ -->
+  <section class="tab" id="tab-roadmap">
+    <h2 style="color:#fff;font-size:26px;text-transform:uppercase;letter-spacing:0.05em">Platinum Roadmap — Vice Got a Price!</h2>
+    <p style="color:var(--muted);font-size:14px;margin-top:8px;max-width:820px">
+      Built from the official trophy descriptions and GTA V's platinum structure. GTA VI lists no online trophies,
+      so the whole platinum can be earned solo. Roughly 60–80 hours by the estimates below.
+    </p>
+
+    <div class="phase">
+      <h3><span class="ph-num">Phase 1</span> Play the story — 14 trophies</h3>
+      <ul>
+        <li>Earn every story trophy naturally: <b>Just Like Paradise</b> through <b>You Gotta Know When to Get Off</b>, plus the mission trophies <b>Trust</b>, <b>Break the Bank</b>, <b>Family Matters</b>, <b>DWNFALL</b>, <b>Hi-Jacked</b>, <b>Snow Storm</b>.</li>
+        <li>Do NOT skip side content while playing — that feeds Phases 2–4 and 100% Completion (<b>A Long Road</b>).</li>
+        <li><span class="missnote">Missable alert:</span> <b>Whip It Good</b>-adjacent showroom stunt (<b>Capital Offense</b>) is best done as soon as Vice City opens in Chapter 3.</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <h3><span class="ph-num">Phase 2</span> Side activities &amp; mini-games — 16 trophies</h3>
+      <ul>
+        <li>Try every activity type once for <b>Master of None</b>; beat <b>Cal</b> (fishing), finish an arcade game (<b>Stick Fiddler</b>), go bowling (<b>Let's Go Bowling</b>), enjoy the <b>Ocean Beach</b> cocktail (<b>In The Beginning…</b>).</li>
+        <li>Complete all 6 stranger strands (Andy, Kenton, Billy, Randy, Tyrone, Bret) — they add up to <b>Strangers &amp; Freaks</b> (8 strands across Leonida).</li>
+        <li>Partner-trophy pair: <b>Hot Together</b> (escape a 4-star wanted level together) and <b>Retail Therapy</b> (3 shops back-to-back with your partner).</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <h3><span class="ph-num">Phase 3</span> Crime side jobs — 9 trophies</h3>
+      <ul>
+        <li><b>Sneakthief</b> (undetected jewelry heist), <b>A Classic Blitz Play</b> (armored truck), <b>Maximum Withdrawal</b> (5 vaults), <b>Pest Control</b> (one illegal operation per gang), <b>Challenging Tank</b> (Rhino), <b>Catch Me If You Can</b> (VCIA departure).</li>
+        <li>Money trophies: <b>Dime on the Dollar</b> ($250k laundering) and <b>Treat Yo Self</b> ($100k shopping) — they come naturally while buying garages (<b>Little Boxes</b>).</li>
+        <li><b>On the Spot</b>: 10 Scooter Bros registrations from the in-game phone app.</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <h3><span class="ph-num">Phase 4</span> Collectibles &amp; exploration — 8 trophies</h3>
+      <ul>
+        <li><b>Discover 100 vehicles</b> (Whip It Good), <b>WAiNK 100 locations</b> (You WAiNKer!), <b>3 card sets</b> (Don't Touch My Deck), <b>meditate everywhere</b> (Positive Mental Attitude), <b>explore all Leonida</b> (The Goodtime State).</li>
+        <li>Do these DURING the story so the 100% checklist never surprises you — <b>A Long Road</b> (gold, 100% Completion) closes here.</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <h3><span class="ph-num">Phase 5</span> The grind — counters &amp; cleanup — 8 trophies</h3>
+      <ul>
+        <li><b>Cunning Stunts</b> (250 stunts), <b>Top Fun</b> (drone race every location), <b>Earn Cash, Not Kudos</b> (20 different races), <b>The Shootist</b> (gold in all 42 shooting-range challenges), <b>One Last Thing</b> (50 challenges).</li>
+        <li>Any leftover story-choice trophies (<b>Actions Speak Louder</b>, <b>Bad Luck, I Guess</b>, <b>The Truth Is Out There</b>, <b>Personal Best</b>) — make a manual save before late-story choices.</li>
+        <li>Finally: <b>Vice Got a Price!</b> — the Platinum pops when the 54th trophy lands. 🏆</li>
+      </ul>
+      <p class="missnote">&#9888; Missable trophies flagged in the dataset: Capital Offense (showroom), Actions Speak Louder,
+        Bad Luck I Guess, The Truth Is Out There, Ten Pin — make manual saves before late-story branches and before one-off stunts.</p>
+    </div>
+
+    <div class="note src-note">
+      <b>Data source note:</b> official trophy names and descriptions are as PlayStation publishes them,
+      cross-listed by <a href="https://psnprofiles.com" target="_blank" rel="noreferrer">PSNProfiles</a> and
+      <a href="https://exophase.com" target="_blank" rel="noreferrer">Exophase</a> (the two agree on every name,
+      description and grade). Guides, phases, missable flags and hour estimates are this entry's own work,
+      written from those official descriptions and GTA V's platinum structure. No Rockstar assets are used;
+      the app fetches nothing.
+    </div>
+  </section>
+
+  <!-- ============ MISSABLES ============ -->
+  <section class="tab" id="tab-missables">
+    <h2 style="color:#fff;font-size:26px;text-transform:uppercase;letter-spacing:0.05em">Missable Trophies</h2>
+    <p style="color:var(--muted);font-size:14px;margin-top:8px">
+      Trophies the official descriptions or community consensus treat as easy to miss. Plan them before their window closes.
+    </p>
+    <div id="missable-list" class="trophy-list" style="margin-top:20px"></div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="tab" id="tab-about">
+    <h2 style="color:#fff;font-size:26px;text-transform:uppercase;letter-spacing:0.05em">About &amp; Data Source</h2>
+    <div class="note src-note" style="font-size:14px;line-height:1.7">
+      <p><b>Trophy list:</b> the official PlayStation 5 list for Grand Theft Auto VI — 55 trophies
+      (1 platinum, 2 gold, 6 silver, 46 bronze; 28 hidden on PSN until earned). Names and descriptions are
+      shown exactly as PlayStation publishes them, cross-checked against
+      <a href="https://psnprofiles.com" target="_blank" rel="noreferrer">PSNProfiles</a> and
+      <a href="https://exophase.com" target="_blank" rel="noreferrer">Exophase</a>.</p>
+      <p style="margin-top:10px"><b>Guides:</b> every guide text is original work written for this entry from the
+      official descriptions and the games' public structure (GTA V's trophy design; GTA VI's known setting —
+      Leonida, Vice City, Jason and Lucia). Each trophy's detail panel names its sources.</p>
+      <p style="margin-top:10px"><b>Privacy / offline:</b> this app is fully offline. It loads only its own local files,
+      makes zero network requests, and stores progress in your browser's localStorage. Export writes a JSON file you
+      can re-import on any machine.</p>
+      <p style="margin-top:10px"><b>No Rockstar assets:</b> the neon look is original. No Rockstar logo, artwork,
+      box art or screenshots are used anywhere.</p>
+    </div>
+    <div id="srcdata"></div>
+  </section>
+</div>
+
+<footer>
+  GTA VI Trophy Guide &amp; Tracker — an original fan-made offline guide. Not affiliated with Rockstar Games or Sony.
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
