@@ -1,4 +1,8 @@
-/* GTA VI Trophy Guide & Tracker — Vice City neon look. Original work, no Rockstar assets. */
+/* ============================================================
+   GTA VI Trophy Guide & Tracker — Vice City neon styling.
+   Palette: hot pink / cyan / purple on deep violet. All CSS is
+   original; no webfonts, no fetched images, no imported sheets.
+   ============================================================ */
 :root {
   --bg: #0b0614;
   --bg2: #130a24;
@@ -13,6 +17,7 @@
   --line: rgba(155, 92, 255, 0.28);
   --ok: #38e08a;
 }
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -27,7 +32,7 @@ body {
 }
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
 
-/* ---- hero ---- */
+/* ---- hero header ---- */
 .hero {
   position: relative;
   padding: 70px 0 46px;
@@ -35,6 +40,7 @@ body {
   border-bottom: 1px solid var(--line);
   overflow: hidden;
 }
+/* faint neon grid behind the title */
 .hero::before {
   content: '';
   position: absolute; inset: 0;
@@ -83,7 +89,7 @@ h1 {
 .stat b { display: block; font-size: 24px; color: var(--gold); }
 .stat span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--muted); }
 
-/* ---- progress ---- */
+/* ---- progress block ---- */
 .progress-block { margin: 26px auto 0; max-width: 640px; text-align: left; }
 .progress-top { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
 .progress-top b { color: #fff; }
@@ -99,7 +105,7 @@ h1 {
 .chip-prog { font-size: 12px; color: var(--muted); background: var(--bg2); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; }
 .chip-prog b { color: var(--cyan); }
 
-/* ---- nav / tabs ---- */
+/* ---- tab navigation ---- */
 nav.tabs { display: flex; gap: 8px; padding: 22px 0 0; flex-wrap: wrap; }
 nav.tabs button {
   background: transparent;
@@ -124,7 +130,7 @@ nav.tabs button.active {
 section.tab { display: none; padding: 26px 0 70px; }
 section.tab.active { display: block; }
 
-/* ---- toolbar ---- */
+/* ---- toolbar (search, filters, actions) ---- */
 .toolbar {
   display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
   background: var(--panel);
@@ -164,7 +170,7 @@ section.tab.active { display: block; }
 .seg .btn { padding: 8px 10px; font-size: 12px; }
 select.btn { appearance: none; }
 
-/* ---- trophy list ---- */
+/* ---- trophy cards ---- */
 .trophy-list { margin-top: 18px; display: flex; flex-direction: column; gap: 10px; }
 .trophy { scroll-margin-top: 130px; }
 .trophy {
@@ -216,7 +222,7 @@ select.btn { appearance: none; }
 }
 .trophy.earned .t-check { background: rgba(56,224,138,0.15); border-color: var(--ok); }
 
-/* detail panel — bottom-right drawer so it is always visible when a trophy is clicked */
+/* detail drawer — floats bottom-right over the list */
 .detail {
   position: fixed;
   right: 22px;
@@ -239,7 +245,7 @@ select.btn { appearance: none; }
 .detail .src a:hover { text-decoration: underline; }
 .close-x { float: right; background: none; border: none; color: var(--muted); font-size: 20px; cursor: pointer; }
 
-/* ---- roadmap ---- */
+/* ---- roadmap phases ---- */
 .phase {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -266,7 +272,7 @@ select.btn { appearance: none; }
 }
 .note a { color: var(--cyan); }
 
-/* ---- data source ---- */
+/* ---- data source notes ---- */
 .src-note { margin-top: 22px; }
 
 /* per-trophy source chips */
@@ -280,7 +286,7 @@ select.btn { appearance: none; }
 }
 .src-chip:hover { border-color: var(--pink); color: #fff; }
 
-/* ---- toast / footer ---- */
+/* ---- footer / empty state ---- */
 footer { border-top: 1px solid var(--line); padding: 26px 0 40px; text-align: center; font-size: 12px; color: var(--muted); }
 .empty { text-align: center; color: var(--muted); padding: 40px 0; font-size: 14px; }
 

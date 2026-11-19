@@ -1,31 +1,34 @@
-// GTA VI Trophy Guide & Tracker — app logic. Original code, fully offline (no network requests).
+/* GTA VI Trophy Guide & Tracker — tracker logic.
+   Everything runs locally: no fetch, no network, no external assets.
+   Progress lives in localStorage; the dataset comes from data.js. */
 'use strict';
 
 var DATA = window.GTA6_TROPHY_DATA;
 var TROPHIES = DATA.trophies;
-var STORE_KEY = 'gta6-trophy-tracker-v1';
 
+var STORE_KEY = 'gta6-trophy-tracker-v1';
 var GRADES = ['platinum', 'gold', 'silver', 'bronze'];
 var CATS = ['story', 'side', 'collection', 'stunt', 'online'];
 
 var state = {
-  earned: {},          // id -> true
-  spoiler: false,
+  earned: {},          // trophy id -> true
+  spoiler: false,      // hides unearned story/platinum details
   filters: { grade: 'all', cat: 'all', missableOnly: false },
   query: '',
   openId: null,
   tab: 'checklist'
 };
 
-/* ---------- persistence ---------- */
+/* ---------------- saved progress ---------------- */
 function load() {
   try {
     var raw = localStorage.getItem(STORE_KEY);
     if (!raw) return;
     var saved = JSON.parse(raw);
     if (saved && typeof saved === 'object' && saved.earned) state.earned = saved.earned;
-  } catch (e) { /* corrupted storage: start fresh */ }
+  } catch (e) { /* unreadable storage: start with a clean slate */ }
 }
+
 function save() {
   try {
     localStorage.setItem(STORE_KEY, JSON.stringify({
@@ -33,22 +36,26 @@ function save() {
       savedAt: new Date().toISOString(),
       version: 1
     }));
-  } catch (e) { /* storage unavailable (private mode): tracking still works in-session */ }
+  } catch (e) { /* storage blocked (private mode): tracking still works in memory */ }
 }
 
-/* ---------- helpers ---------- */
+/* ---------------- small utilities ---------------- */
 function esc(s) {
   return String(s).replace(/[&<>"']/g, function (c) {
     return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
   });
 }
+
 function medalIcon(g) {
   return { platinum: '\u25C9', gold: '\u2B50', silver: '\u25CE', bronze: '\u25CB' }[g] || '\u25CB';
 }
+
 function isEarned(t) { return !!state.earned[t.id]; }
+
 function isSpoiled(t) {
   return state.spoiler && !isEarned(t) && (t.category === 'story' || t.grade === 'platinum');
 }
+
 function visibleTrophies() {
   var q = state.query.trim().toLowerCase();
   return TROPHIES.filter(function (t) {
@@ -63,12 +70,14 @@ function visibleTrophies() {
   });
 }
 
-/* sources: explicit field, else parsed from the guide's "Sources: ..." sentence */
+/* Source list: use the explicit field when present, otherwise pull the
+   trailing "Sources: ..." sentence out of the guide text. */
 function trophySources(t) {
   if (Array.isArray(t.sources) && t.sources.length) return t.sources.map(String);
   var m = (t.guide || '').match(/(?:^|\.\s|\u2014\s)Sources?:\s*(.+?)\.?\s*$/);
   return m ? m[1].split(/\s*;\s*/).filter(Boolean) : [];
 }
+
 function sourceChipsHTML(t) {
   var srcs = trophySources(t);
   if (!srcs.length) return '';
@@ -77,7 +86,7 @@ function sourceChipsHTML(t) {
   }).join('') + '</div>';
 }
 
-/* ---------- render ---------- */
+/* ---------------- rendering ---------------- */
 function renderStats() {
   var earnedCount = TROPHIES.filter(isEarned).length;
   var total = TROPHIES.length;
@@ -96,6 +105,10 @@ function renderStats() {
     var el = document.getElementById('cp-' + c);
     if (el) el.innerHTML = c + ': <b>' + e + '/' + list.length + '</b>';
   });
+}
+
+function earnedTag(t) {
+  return isEarned(t) ? '<span class="tag earned-t">earned</span>' : '';
 }
 
 function trophyHTML(t) {
@@ -150,7 +163,7 @@ function renderDetail() {
       '<span class="tag">' + esc(t.category) + '</span>' +
       '<span class="tag">Ch: ' + esc(t.chapter) + '</span>' +
       (t.missable ? '<span class="tag missable">MISSABLE</span>' : '') +
-      (earnedTag(t)) +
+      earnedTag(t) +
     '</div>' +
     '<h4>Official description</h4><p>' + (spoiled ? 'Hidden until earned.' : esc(t.description)) + '</p>' +
     '<h4>Guide</h4><p>' + esc(guide) + '</p>' +
@@ -165,9 +178,6 @@ function renderDetail() {
     '<div style="margin-top:16px"><button class="btn primary" data-check="' + t.id + '">' +
       (isEarned(t) ? 'Mark NOT earned' : 'Mark earned') + '</button></div>';
 }
-function earnedTag(t) {
-  return isEarned(t) ? '<span class="tag earned-t">earned</span>' : '';
-}
 
 function render() {
   renderStats();
@@ -175,7 +185,7 @@ function render() {
   renderDetail();
 }
 
-/* ---------- export / import ---------- */
+/* ---------------- export / import ---------------- */
 function exportProgress() {
   var payload = {
     app: 'gta6-trophy-tracker', version: 1,
@@ -192,6 +202,7 @@ function exportProgress() {
   a.click();
   URL.revokeObjectURL(a.href);
 }
+
 function toast(msg) {
   var el = document.getElementById('toast');
   if (!el) {
@@ -215,7 +226,7 @@ function importProgress(file) {
       var data = JSON.parse(reader.result);
       var ids = {};
       (data.earned || []).forEach(function (id) { ids[id] = true; });
-      // also accept name-based exports
+      // name-based exports are accepted too
       if (data.earnedNames) {
         TROPHIES.forEach(function (t) {
           if (data.earnedNames.indexOf(t.name) !== -1) ids[t.id] = true;
@@ -232,7 +243,7 @@ function importProgress(file) {
   reader.readAsText(file);
 }
 
-/* ---------- events ---------- */
+/* ---------------- events ---------------- */
 function setTab(name) {
   state.tab = name;
   document.querySelectorAll('nav.tabs button').forEach(function (b) {
@@ -240,6 +251,12 @@ function setTab(name) {
   });
   document.querySelectorAll('section.tab').forEach(function (s) {
     s.classList.toggle('active', s.id === 'tab-' + name);
+  });
+}
+
+function setSeg(groupId, key, value) {
+  document.querySelectorAll('#' + groupId + ' [data-' + key + ']').forEach(function (b) {
+    b.classList.toggle('on', b.dataset[key] === value);
   });
 }
 
@@ -292,6 +309,8 @@ document.getElementById('import-file').addEventListener('change', function (e) {
   if (e.target.files[0]) importProgress(e.target.files[0]);
   e.target.value = '';
 });
+
+/* reset asks for a second click within 4s before wiping progress */
 var resetArmed = false;
 document.getElementById('reset-btn').addEventListener('click', function (ev) {
   var btn = ev.currentTarget;
@@ -314,22 +333,18 @@ document.getElementById('reset-btn').addEventListener('click', function (ev) {
   render();
   toast('Progress reset.');
 });
+
 document.querySelectorAll('nav.tabs button').forEach(function (b) {
   b.addEventListener('click', function () { setTab(b.dataset.tab); });
 });
 
-function setSeg(groupId, key, value) {
-  document.querySelectorAll('#' + groupId + ' [data-' + key + ']').forEach(function (b) {
-    b.classList.toggle('on', b.dataset[key] === value);
-  });
-}
-
-/* ---------- missables + about tabs ---------- */
+/* ---------------- missables + about tabs ---------------- */
 function renderMissables() {
   var miss = TROPHIES.filter(function (t) { return t.missable; });
   document.getElementById('missable-list').innerHTML =
     miss.length ? miss.map(trophyHTML).join('') : '<div class="empty">No missable trophies flagged.</div>';
 }
+
 function renderAbout() {
   document.getElementById('srcdata').innerHTML =
     '<div class="note" style="font-size:13px">Dataset: ' + TROPHIES.length + ' trophies — ' +
@@ -343,7 +358,7 @@ function renderAbout() {
     }).join(', ') + '.</div>';
 }
 
-/* ---------- init ---------- */
+/* ---------------- boot ---------------- */
 load();
 setTab('checklist');
 render();

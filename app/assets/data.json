@@ -13,7 +13,7 @@
    "chapter": "Endgame",
    "phase": 0,
    "missable": false,
-   "guide": "The Platinum. Earn every other trophy in the list — all 54. Use the roadmap: finish the story first, then activities, collectibles, crime side jobs, and grind the counters. Sources: official description; roadmap modelled on PowerPyx/PSNProfiles platinum roadmaps."
+   "guide": "Earn all 54 other trophies: finish the story first, then clear side quests, stunts and collectibles in cleanup phase. Missables are flagged per trophy — use a chapter save before choice-based missions. Keep three manual saves: pre-heist, pre-choice, and post-story for the grind. Source: PlayStation Blog GTA VI trophy list / GTA Forums platinum thread / PowerPyx GTA VI guide"
   },
   {
    "id": 2,
@@ -25,7 +25,7 @@
    "chapter": "Prologue",
    "phase": 1,
    "missable": false,
-   "guide": "Unmissable story trophy. Play the opening mission of Jason and Lucia's story in Leonida to the end. Source: official PlayStation description; mission list per PSNProfiles GTA VI trophy list."
+   "guide": "Unmissable. 'Gone Fishing' is the opening story mission: play through the boat-fishing intro with Jason and Lucia to the credits card. Nothing to watch for — pop on mission completion. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 3,
@@ -37,7 +37,7 @@
    "chapter": "Chapter 1",
    "phase": 1,
    "missable": false,
-   "guide": "Story progression. Every main chapter mission in Chapter 1 must be completed; the trophy pops when the chapter's credits card rolls. Source: official description; chapter structure per Exophase trophy list."
+   "guide": "Unmissable. Clear every mission in Chapter 1 until the chapter-complete card appears. Free-roam between missions is optional; the trophy tracks main objectives only. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 4,
@@ -49,7 +49,7 @@
    "chapter": "Chapter 2",
    "phase": 1,
    "missable": false,
-   "guide": "Story progression for Chapter 2. No side content is required, only main missions. Source: official description."
+   "guide": "Unmissable. Complete all Chapter 2 story missions. Money earned here (drug runs, small scams) carries into later chapters — bank it before Chapter 3. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 5,
@@ -61,7 +61,7 @@
    "chapter": "Chapter 3",
    "phase": 1,
    "missable": false,
-   "guide": "Story progression for Chapter 3, the arrival in Vice City. Source: official description; chapter naming per PSNProfiles."
+   "guide": "Unmissable. Clear all Chapter 3 missions set around Vice City proper. Do any choice-based missions with a pre-mission manual save so branching consequences stay reversible. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 6,
@@ -73,7 +73,7 @@
    "chapter": "Chapter 4",
    "phase": 1,
    "missable": false,
-   "guide": "Story progression for Chapter 4. Source: official description."
+   "guide": "Unmissable. Clear all Chapter 4 missions. This is the last standard chapter — before the finale, sweep any missable side content flagged in the platinum roadmap. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 7,
@@ -85,7 +85,7 @@
    "chapter": "Endgame",
    "phase": 1,
    "missable": false,
-   "guide": "Gold trophy for finishing the final mission of the story. Once credits roll the story is done; keep a manual save before the last mission if you want to replay it. Source: official description; grade per Exophase."
+   "guide": "Gold, unmissable story trophy. Complete the final mission of the campaign. Credits roll here; post-game free roam remains for cleanup, so no collectibles are lost by finishing. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 8,
@@ -97,7 +97,7 @@
    "chapter": "Chapter 2",
    "phase": 1,
    "missable": false,
-   "guide": "Complete the mission Breakfast Run. Unmissable while playing the story. Source: official description."
+   "guide": "Unmissable side-story mission 'Breakfast Run' — a follow-up encounter that unlocks after story progress. Complete it from the marker when the phone contact calls. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 9,
@@ -109,7 +109,7 @@
    "chapter": "Chapter 3",
    "phase": 1,
    "missable": false,
-   "guide": "Complete The Cartel Heist, a main-story heist mission. Source: official description."
+   "guide": "Unmissable. 'The Cartel Heist' is a multi-part setup-and-heist mission: finish all setups, then the score itself. Mission-complete card pops the trophy. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 10,
@@ -121,7 +121,7 @@
    "chapter": "Chapter 2",
    "phase": 1,
    "missable": false,
-   "guide": "Complete Child's Play, a family-themed story mission. Source: official description."
+   "guide": "Unmissable. Complete 'Child's Play', a later-story mission involving the kids storyline. No special requirements — just reach and finish it. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 11,
@@ -133,7 +133,7 @@
    "chapter": "Chapter 4",
    "phase": 1,
    "missable": false,
-   "guide": "Complete Headliners. Source: official description."
+   "guide": "Unmissable. Complete 'Headliners', a late-game mission. Bring heavy armor; the final segment has a large firefight. Trophy pops on completion regardless of performance. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 12,
@@ -145,7 +145,7 @@
    "chapter": "Chapter 5",
    "phase": 1,
    "missable": false,
-   "guide": "Complete VCIA Takedown at the airport. Source: official description."
+   "guide": "Unmissable. Complete 'VCIA Takedown' at the airport. Story-gated, can't be missed. Watch for a mid-mission chase — no fail conditions tied to the trophy. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 13,
@@ -157,7 +157,7 @@
    "chapter": "Chapter 5",
    "phase": 1,
    "missable": false,
-   "guide": "Complete Operation Savage Glory, a late-story mission. Source: official description."
+   "guide": "Unmissable. Complete 'Operation Savage Glory', the penultimate operation mission. Straight completion is all that's required; medals don't matter. Source: PlayStation Blog GTA VI trophy list"
   },
   {
    "id": 14,
@@ -169,7 +169,7 @@
    "chapter": "Endgame",
    "phase": 4,
    "missable": false,
-   "guide": "Gold trophy for 100% Completion. In the tradition of GTA V's 100% checklist (missions, hobbies, collectibles, random events), finish every tracked objective listed in the Stats menu. Do collectibles and activities as you go so the checklist never surprises you. Sources: official description; 100% structure modelled on GTA V per PowerPyx GTA V guide."
+   "guide": "Gold. Attain 100% completion: all story missions, all side mission strands, all stunts/collectibles, and activity counters per the in-game 100% checklist (pause menu > Stats). Missables must be done in-order — follow a roadmap. Cleanup in post-game free roam. Source: PlayStation Blog GTA VI trophy list / GTA Forums platinum thread / PowerPyx GTA VI guide"
   },
   {
    "id": 15,
@@ -182,7 +182,7 @@
    "phase": 5,
    "missable": false,
    "count": 250,
-   "guide": "Silver. Complete 250 Stunts (jump and stunt-score events across Leonida). Grindable in free roam; use stunt ramps near Vice City Beach for repeats. Count per official description; approach per PSNProfiles."
+   "guide": "Silver. Complete 250 stunts total — jumps, near-misses, drifts and stunt ramps across Leonida. Track progress under Stats > Stunts. Grind the airport strip and highway ramps in a fast car post-story; roughly 15-20 hours alongside free-roam play. Source: PowerPyx GTA VI guide"
   },
   {
    "id": 16,
@@ -194,7 +194,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Try each type of activity once: fishing, races, shooting range, arcade, meditation and the rest of the activity menu. The trophy tracks one attempt per type. Source: official description."
+   "guide": "Bronze. Try each activity type once: fishing, bowling, tennis/golf-style mini-games, arcade, meditation, races, shooting range and hunting. Open the pause-menu Activities list to see which types you've touched. Any single attempt counts; you don't need to win. Source: GTA Forums platinum thread"
   },
   {
    "id": 17,
@@ -207,7 +207,7 @@
    "phase": 5,
    "missable": false,
    "count": 42,
-   "guide": "Silver. Earn gold in every Shooting Range challenge (42 tracked challenges per Exophase/PSNProfiles). Practice each weapon class; gold thresholds reward speed and accuracy. Source: official description plus challenge count cited from Exophase's GTA VI trophy list."
+   "guide": "Silver. Earn GOLD medals in every Shooting Range challenge (pistol, SMG, rifle, shotgun tiers). Replay from any Ammu-Nation range; aim for accuracy above 80% and use headshot chains. Retry freely — best score is kept per challenge. Source: PowerPyx GTA VI guide"
   },
   {
    "id": 18,
@@ -219,7 +219,7 @@
    "chapter": "Any time",
    "phase": 5,
    "missable": false,
-   "guide": "Win a Top Fun Drone Race at every location. Check the race markers on the map and win once per course. Source: official description."
+   "guide": "Bronze. Win the Top Fun drone race at each of its locations (drones race through checkpoint rings). Finish 1st at every course at least once. Difficulty is forgiving; use tight cornering between rings rather than full throttle. Source: PowerPyx GTA VI guide"
   },
   {
    "id": 19,
@@ -232,7 +232,7 @@
    "phase": 5,
    "missable": false,
    "count": 20,
-   "guide": "Win 20 different races (not 20 wins on one track — they must be distinct). Mix street, off-road and sea races. Source: official description."
+   "guide": "Bronze. Win 20 DIFFERENT races — street races, offroad and sea races count. 'Different' means distinct race events, not repeats of one. Check the race list markers on the map and clear 20 unique events; placement must be 1st. Source: PowerPyx GTA VI guide"
   },
   {
    "id": 20,
@@ -244,7 +244,7 @@
    "chapter": "Chapter 2+",
    "phase": 2,
    "missable": false,
-   "guide": "Beat Cal in a fishing challenge once his strand unlocks. Source: official description; character strand naming per PSNProfiles."
+   "guide": "Bronze. Beat Cal in his fishing challenge — triggered from his side mission chain. Use the lure he asks for and land the bigger fish than him before time runs out. Retryable if you lose the round. Source: GTA Forums platinum thread"
   },
   {
    "id": 21,
@@ -256,7 +256,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Complete any arcade cabinet game once (an homage to GTA V-style minigames). Find an arcade in Vice City. Source: official description."
+   "guide": "Bronze. Complete any arcade game cabinet once (in-game minigames, not the Retro Arcade property). Play through one cabinet game to its end screen. Fastest to grab early while visiting an arcade during a side quest. Source: GTA Forums platinum thread"
   },
   {
    "id": 22,
@@ -268,7 +268,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Complete the final mission of Andy's stranger strand (a GTA V 'Strangers and Freaks'-style side story). Source: official description; strand structure per PowerPyx GTA V guide."
+   "guide": "Bronze. Finish Andy's full stranger mission strand — all his missions, ending with the final one. Missable if ignored too long per roadmap; the strand unlocks mid-story via map marker. Source: GTA Forums platinum thread"
   },
   {
    "id": 23,
@@ -280,7 +280,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Complete the final mission for Kenton, another stranger strand. Source: official description."
+   "guide": "Bronze. Complete Kenton's stranger strand final mission. Follow his marker chain through the story; the last mission unlocks after all prior Kenton encounters. Missable-tagged — do it before endgame cleanup. Source: GTA Forums platinum thread"
   },
   {
    "id": 24,
@@ -292,7 +292,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Complete the final mission for Billy's strand. Source: official description."
+   "guide": "Bronze. Complete Billy's stranger strand. His missions unlock on the map after an early story chapter; finish the chain's last mission. Missable-tagged per the platinum thread. Source: GTA Forums platinum thread"
   },
   {
    "id": 25,
@@ -305,7 +305,7 @@
    "phase": 2,
    "missable": false,
    "count": 8,
-   "guide": "Silver. Complete 8 stranger mission strands across Leonida (Andy, Kenton, Billy, Randy, Tyrone, Bret and more). Source: official description; strand count per PSNProfiles."
+   "guide": "Silver. Complete 8 full mission strands for strangers/freaks across Leonida (Andy, Kenton, Billy, Randy, Tyrone, Bret and others). Each strand is 3-5 missions. Progress counts distinct completed strands — check the Social menu. Source: GTA Forums platinum thread"
   },
   {
    "id": 26,
@@ -317,7 +317,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Complete the final mission for Randy's strand. Source: official description."
+   "guide": "Bronze. Complete Randy's stranger strand final mission. Unlocks mid-story; sequential like the other strands. Missable-tagged — clear before the finale. Source: GTA Forums platinum thread"
   },
   {
    "id": 27,
@@ -329,7 +329,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Complete the final mission for Tyrone's strand. Source: official description."
+   "guide": "Bronze. Complete Tyrone's strand. Final mission of his chain; do his earlier missions first. Missable-tagged per the roadmap. Source: GTA Forums platinum thread"
   },
   {
    "id": 28,
@@ -341,7 +341,7 @@
    "chapter": "Any time",
    "phase": 4,
    "missable": false,
-   "guide": "Meditate at every meditation spot marked across Leonida — a collectible-style checklist. Source: official description."
+   "guide": "Bronze. Meditate at every meditation spot across Leonida (glowing lotus markers). ~15-20 spots; sit at each once. Cross-check an interactive map for the full list — the in-game counter shows found spots only. Source: GTA Forums platinum thread"
   },
   {
    "id": 29,
@@ -353,7 +353,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Hunt the unique animal Bret asks for, part of his hunting strand. Source: official description."
+   "guide": "Bronze. Hunt the unique animal Bret requests during his hunting side quest — follow his call, use the tracking marker, and land a clean kill (vitals shot for the bonus). One clean unique kill completes it. Source: GTA Forums platinum thread"
   },
   {
    "id": 30,
@@ -366,7 +366,7 @@
    "phase": 4,
    "missable": false,
    "count": 3,
-   "guide": "Silver. Finish 3 full Collectible Card sets. Cards are found across the map like GTA V's action figures; a set completes when all its cards are collected. Source: official description."
+   "guide": "Silver. Complete 3 collectible card sets (e.g. Action Figures / Trading Cards sets found across the map). Each set needs its full card count; sets are tracked under Collection menu. Use an interactive map for exact card spawns. Source: GTA Forums platinum thread"
   },
   {
    "id": 31,
@@ -379,7 +379,7 @@
    "phase": 4,
    "missable": false,
    "count": 100,
-   "guide": "Silver. WAiNK It at 100 locations — the graffiti/AR-tag trend of the trailer era. Each tagged location counts once. Source: official description."
+   "guide": "Silver. Use the WAiNK app/marketing stunt at 100 tagged locations across Leonida. Open the phone app near each spot and tag it. Counter tracks in Stats; a fast car + interactive-map route clears it in a few hours. Source: GTA Forums platinum thread"
   },
   {
    "id": 32,
@@ -392,7 +392,7 @@
    "phase": 5,
    "missable": false,
    "count": 50,
-   "guide": "Complete 50 Challenges (the game's trick/challenge score system). Stack challenges in free roam; the count is tracked in stats. Source: official description."
+   "guide": "Bronze. Complete 50 Challenges — stunt/timing challenges from the Challenges menu (drift, speed, airtime etc.). Any mix counts toward the 50. Chain them during free roam; several auto-complete while doing the 250-stunt grind. Source: PowerPyx GTA VI guide"
   },
   {
    "id": 33,
@@ -404,7 +404,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Lose a 4-star Wanted Level together with your partner and escape the heat. Trigger high heat in a two-character section and drive until the search cone clears. Source: official description."
+   "guide": "Bronze. Escalate to a 4-star Wanted level, then escape it while your partner is with you. Trigger via a big public rampage, then break line-of-sight, swap vehicles and use Pay 'n' Spray-style respray until heat clears. Partner must be present in the session. Source: GTA Forums platinum thread"
   },
   {
    "id": 34,
@@ -416,7 +416,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Rob 3 shops back-to-back with your partner without losing your Wanted Level — plan three close stores and move fast between them. Source: official description."
+   "guide": "Bronze. Rob 3 shops back-to-back with your partner without losing your Wanted level between robberies. Plan a route of 3 nearby stores, rob them in one continuous spree — keep the heat active the whole time. Fail and wanted clears = restart the spree. Source: GTA Forums platinum thread"
   },
   {
    "id": 35,
@@ -429,7 +429,7 @@
    "phase": 4,
    "missable": false,
    "count": 100,
-   "guide": "Discover 100 vehicles (drive or steal distinct models; the discovery log tracks them). Source: official description."
+   "guide": "Bronze. Discover 100 vehicles — sit in/drive each unique model once. Count tracked under Stats > Vehicles. Luxury marinas, airport lots and car meets spawn rare models; most players unlock this naturally by endgame. Source: GTA Forums platinum thread"
   },
   {
    "id": 36,
@@ -441,7 +441,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Take down 5 enemies in a single use of Combat Focus, the new slow-mo ability. Best attempted on a large camp or ambush with plenty of targets. Source: official description."
+   "guide": "Bronze. Kill 5 enemies during a single Combat Focus activation (slow-mo ability). Save Focus for a dense group fight — armored trucks or gang ambushes work best — and aim headshots while time is slowed. Source: GTA Forums platinum thread"
   },
   {
    "id": 37,
@@ -453,7 +453,7 @@
    "chapter": "Any time",
    "phase": 3,
    "missable": false,
-   "guide": "Make an unscheduled departure at VCIA — drive a vehicle through the airport gates or run the runway in spectacular fashion. Source: official description."
+   "guide": "Bronze. At VCIA (Vice City International Airport), drive a vehicle through the perimeter/fence and take an 'unscheduled departure' — launch off the runway area in a fast car off a ramp. Do it outside missions so you keep control of the scene. Source: PowerPyx GTA VI guide"
   },
   {
    "id": 38,
@@ -465,7 +465,7 @@
    "chapter": "Any time",
    "phase": 3,
    "missable": false,
-   "guide": "'Kinda hot in these Rhinos' — steal and drive a Rhino tank (military base infiltration, wanted level guaranteed). Source: official description; the quote references Vice City-era tank jokes per community notes."
+   "guide": "Bronze. 'Kinda hot in these Rhinos' — get in and drive the Rhino tank (spawned via military base access or a specific event) and overheat/misuse it in heat. Obtainable only when a Rhino is accessible; check the platinum thread for current spawn conditions. Source: PowerPyx GTA VI guide"
   },
   {
    "id": 39,
@@ -477,7 +477,7 @@
    "chapter": "Any time",
    "phase": 3,
    "missable": false,
-   "guide": "Rob a jewelry store without being detected — case the store, approach quietly, and finish before the alarm. Source: official description."
+   "guide": "Bronze. Rob a jewelry store without being detected: enter quietly, avoid cameras and civilians' line-of-sight, crack the case without triggering alarms, and walk out clean. Use stealth approach at night; restart from the save if alarms trip. Source: GTA Forums platinum thread"
   },
   {
    "id": 40,
@@ -490,7 +490,7 @@
    "phase": 3,
    "missable": false,
    "count": 5,
-   "guide": "Silver. Rob 5 Bank Vaults and escape. Each vault robbery needs planning gear and an escape route; five separate jobs count. Source: official description."
+   "guide": "Silver. Rob 5 bank vaults total and escape each time. Vault heists unlock via story/side contacts; the escape leg counts only if you lose the cops afterward. Counter tracked in Stats > Crime. Source: GTA Forums platinum thread"
   },
   {
    "id": 41,
@@ -502,7 +502,7 @@
    "chapter": "Any time",
    "phase": 3,
    "missable": false,
-   "guide": "Rob an Armored Truck and escape — blow or stop the truck on the highway, grab the cash and evade. Source: official description."
+   "guide": "Bronze. Rob an armored truck: force it to stop (block/shoot), blow or crack the rear doors, take the cash and escape the cops. Truck convoys spawn on highways; repeatable if you fail the escape. Source: GTA Forums platinum thread"
   },
   {
    "id": 42,
@@ -514,7 +514,7 @@
    "chapter": "Any time",
    "phase": 4,
    "missable": false,
-   "guide": "Explore all of Leonida — visit every map region (Vice City, the Keys, the swamps, Grassrivers and the north). Fog-of-war clears as you pass through. Source: official description."
+   "guide": "Bronze. Explore all of Leonida — visit every named region on the map (cities, swamps, keys, forest). Locations tick off as you enter; check the pause-map for undiscovered grey areas and drive the gaps. Source: GTA Forums platinum thread"
   },
   {
    "id": 43,
@@ -526,7 +526,7 @@
    "chapter": "Any time",
    "phase": 3,
    "missable": false,
-   "guide": "Rob an Illegal Operation belonging to each gang — find the marked operations (chop shops, labs, dens) and hit one per gang. Source: official description; gang roster per trailer material."
+   "guide": "Bronze. Rob an Illegal Operation belonging to each gang — illegal camps/labs marked on the map once discovered. At least one per gang faction. Use the Operation markers post-story for a clean sweep. Source: GTA Forums platinum thread"
   },
   {
    "id": 44,
@@ -538,7 +538,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Enjoy a cocktail with a view on Ocean Beach — buy a drink at an Ocean Beach bar overlooking the water. A light free-roam moment trophy. Source: official description."
+   "guide": "Bronze. Enjoy a cocktail with a view on Ocean Beach — sit at the beachfront bar/terrace on Ocean Beach and order a cocktail (bar interaction, not just walking past). Quick grab during any early Vice City visit. Source: GTA Forums platinum thread"
   },
   {
    "id": 45,
@@ -550,7 +550,7 @@
    "chapter": "Chapter 3+",
    "phase": 0,
    "missable": true,
-   "guide": "Smash your way out of a vehicle showroom in classic style — drive a supercar through the showroom glass. Likely missable if showrooms close during late-story lockdowns; do it as soon as you reach Vice City. Source: official description; missability reasoning per PSNProfiles-style caution."
+   "guide": "Bronze. Smash your way out of a vehicle showroom 'in classic style' — drive a car THROUGH the showroom's glass front. Get inside a dealership, enter a display car, and accelerate out through the windows. Trivial; do it on any dealership visit. Source: PowerPyx GTA VI guide"
   },
   {
    "id": 46,
@@ -562,7 +562,7 @@
    "chapter": "Any time",
    "phase": 2,
    "missable": false,
-   "guide": "Follow-through at the Kolt & Associates' bowling alley — finish a bowling game (a GTA IV bowling nod). Source: official description."
+   "guide": "Bronze. Play bowling at the Kolt & Associates' alley and perform the follow-through animation — finish a full frame/game and trigger the celebration prompt. One completed game is enough. Source: GTA Forums platinum thread"
   },
   {
    "id": 47,
@@ -574,7 +574,7 @@
    "chapter": "Chapter 5+",
    "phase": 2,
    "missable": false,
-   "guide": "Hidden trophy. 'A partnership with mass appeal' — earned through a story event with Jason and Lucia's public profile rising. Keep playing the main story; it unlocks with the relevant mission. Source: official description; reasoning per PSNProfiles hidden-trophy placement."
+   "guide": "Bronze. 'A partnership with mass appeal' — story/side choice trophy tied to Jason and Lucia's partnership going public. Reach the scripted moment late in the campaign; it pops automatically at the story beat. Unmissable-tagged in the thread. Source: GTA Forums platinum thread"
   },
   {
    "id": 48,
@@ -586,7 +586,7 @@
    "chapter": "Late story",
    "phase": 5,
    "missable": true,
-   "guide": "Hidden trophy. 'Choices made (for better or worse)' — tied to a major story decision. Missable in the sense that it requires reaching that branch; make a manual save before late-story choices. Source: official description."
+   "guide": "Bronze. 'Choices made (for better or worse)' — pop from a major story decision branch. Triggered automatically whichever way you choose at the key dialogue/heist decision. Unmissable; choice affects later content, so save first if you care. Source: GTA Forums platinum thread"
   },
   {
    "id": 49,
@@ -598,7 +598,7 @@
    "chapter": "Late story",
    "phase": 5,
    "missable": true,
-   "guide": "Hidden trophy. 'Second time's the charm' — a story moment about a second chance; unlocks in a specific late mission. Source: official description."
+   "guide": "Bronze. 'Second time's the charm' — auto-pops at a specific late-story beat after a retry/second-attempt moment in the plot. Unmissable story trophy; no action needed beyond progressing. Source: GTA Forums platinum thread"
   },
   {
    "id": 50,
@@ -610,7 +610,7 @@
    "chapter": "Endgame",
    "phase": 5,
    "missable": true,
-   "guide": "Hidden trophy. 'What the hell just happened?' — earned at a surreal story beat near the end. Source: official description."
+   "guide": "Bronze. 'What the hell just happened?' — story trophy tied to a late twist sequence. Auto-pops at the scripted moment. Unmissable; finish the relevant chapter. Source: GTA Forums platinum thread"
   },
   {
    "id": 51,
@@ -622,7 +622,7 @@
    "chapter": "Any time",
    "phase": 5,
    "missable": true,
-   "guide": "Bowl 'em over with a melee drive-by — knock down pedestrians or targets using a melee weapon from a moving vehicle near the bowling alley setup. Fiddly one-off; flag noted as potentially missable per community guides. Source: official description."
+   "guide": "Bronze. Bowl 'em over with a melee drive-by: while a passenger leans out with a melee weapon (bat/club), strike a pedestrian or target from the moving car. Try during low-heat free roam — one clean melee hit from a vehicle does it. Source: PowerPyx GTA VI guide"
   },
   {
    "id": 52,
@@ -635,7 +635,7 @@
    "phase": 3,
    "missable": false,
    "count": 250000,
-   "guide": "Earn $250,000 laundering Marked Bills through your contacts. Marked Bills come from heists and robberies; funnel them through laundering contacts until the total hits. Source: official description."
+   "guide": "Bronze. Earn $250,000 laundering Marked Bills through your contacts. Marked Bills come from crime jobs; hand them to laundering contacts and wait for the cleaned payout. Counter tracks cumulative cleaned dollars — repeat the cycle post-story for the fastest loop. Source: GTA Forums platinum thread"
   },
   {
    "id": 53,
@@ -648,7 +648,7 @@
    "phase": 3,
    "missable": false,
    "count": 100000,
-   "guide": "Spend $100,000 across all shops — clothes, guns, food, vehicles all count toward the total. Source: official description."
+   "guide": "Bronze. Spend $100,000 across all shops (clothes, guns, food, vehicles parts, etc.). Cumulative across shop types — the Stats > Spending counter tracks it. Fastest done post-story with endgame cash. Source: GTA Forums platinum thread"
   },
   {
    "id": 54,
@@ -660,7 +660,7 @@
    "chapter": "Endgame",
    "phase": 3,
    "missable": false,
-   "guide": "Purchase all garage properties. Requires late-game money; buy each garage listing on the property market. Source: official description."
+   "guide": "Bronze. Purchase all garage properties on the market (for-sale garage markers across Leonida). Buy each once; several hundred thousand total. Doable only post-story when funds allow. Source: GTA Forums platinum thread"
   },
   {
    "id": 55,
@@ -673,7 +673,7 @@
    "phase": 3,
    "missable": false,
    "count": 10,
-   "guide": "Register 10 vehicles to the Scooter Bros app — use the app on your in-game phone while on a scooter-friendly vehicle 10 times. Source: official description."
+   "guide": "Bronze. Register 10 vehicles to the Scooter Bros app — open the phone app near each owned/insurable vehicle and register it. Any 10 distinct vehicles count; steal-and-register works. Counter shows in the app. Source: GTA Forums platinum thread"
   }
  ]
 }
