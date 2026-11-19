@@ -1,4 +1,10 @@
 # GTA VI Trophy Guide & Tracker
+[![competition](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/denz136/makefun-gta6-trophy-guide-01/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/denz136/makefun-gta6-trophy-guide-01/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
+Built for the make.fun bounty [gta6-trophy-guide-01](https://make.fun/bounty/gta6-trophy-guide-01).
+
+# GTA VI Trophy Guide & Tracker
 
 A single-page web app that doubles as a trophy guide and a personal completion
 tracker for the 55 PlayStation 5 trophies of Grand Theft Auto VI. It ships as a
