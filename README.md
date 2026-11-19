@@ -79,3 +79,5 @@ live PSN source.
 
 MIT (see `LICENSE` at the repository root). Fan-made guide, not affiliated with
 Rockstar Games or Sony Interactive Entertainment.
+
+Verified offline build
