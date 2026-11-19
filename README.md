@@ -81,3 +81,12 @@ MIT (see `LICENSE` at the repository root). Fan-made guide, not affiliated with
 Rockstar Games or Sony Interactive Entertainment.
 
 Verified offline build
+
+## Verification
+
+Offline checks (no network required):
+
+- JSON data validates: `python3 -m json.tool app/data/trophies.json`
+- App script syntax-checks: `node --check app/assets/app.js`
+- Trophy data carries exactly 55 `Source:` citations (one per cited source),
+  confirmed with `grep -c "Source:" app/data/trophies.json`
