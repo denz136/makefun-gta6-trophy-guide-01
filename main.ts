@@ -1,3 +1,4 @@
+// authored: final pass
 // gta6-trophy-guide-01 — dossier writer.
 //
 // How this entry is put together:
